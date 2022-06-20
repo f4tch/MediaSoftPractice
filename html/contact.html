@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../style/contact.css">
+
+	<script src="../js/menu.js"></script>
+
+	<title>Contact Us</title>
+</head>
+<body>
+	<nav class="navigation">
+		<a href="homepage.html"><img class="logo" src="../images/logo.svg"></a>
+		<button class="menubutton" onclick="showMenu()"></button>
+	</nav>
+
+	<div id="menu" class="menu">
+		<button class="close_button" onclick="hideMenu()"></button>
+		<div class="menu_section menu_about">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_about_caption">About US</p>
+				<button class="menu_arrow_button about_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_about_list">
+				<a><li class="menu_about_li">About</li></a>
+				<a><li class="menu_about_li">What We Do</li></a>
+				<a><li class="menu_about_li">Project</li></a>
+				<a><li class="menu_about_li">How It Work With Us</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_follow">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_follow_caption">Follow US</p>
+				<button class="menu_arrow_button follow_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_follow_list">
+				<a><li class="menu_follow_li">Instagram</li></a>
+				<a><li class="menu_follow_li">Facebook</li></a>
+				<a><li class="menu_follow_li">LinkedIn</li></a>
+				<a><li class="menu_follow_li">Youtube</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_sample">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_sample1_caption">Sample 1</p>
+				<button class="menu_arrow_button sample1_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_sample1_list">
+				<a><li class="menu_sample1_li">Smthng1</li></a>
+				<a><li class="menu_sample1_li">Smthng2</li></a>
+				<a><li class="menu_sample1_li">Smthng3</li></a>
+				<a><li class="menu_sample1_li">Smthng4</li></a>
+				<a><li class="menu_sample1_li">Smthng5</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_sample">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_sample2_caption">Sample 2</p>
+				<button class="menu_arrow_button sample2_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_sample2_list">
+				<a><li class="menu_sample2_li">Smthng1</li></a>
+				<a><li class="menu_sample2_li">Smthng2</li></a>
+				<a><li class="menu_sample2_li">Smthng3</li></a>
+				<a><li class="menu_sample2_li">Smthng4</li></a>
+				<a><li class="menu_sample2_li">Smthng5</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<header class="header">
+		<h1 class="header__caption">Contact Us</h1>
+		<p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</header>
+
+	<content class="content">
+		<div class="content__contact">
+			<div class="contacts">
+				<img class="contacts_img" src="../images/contactus_img.svg">
+				<p class="contact_caption">ADDRESS</p>
+				<p class="contact_desc contact_text">Id convallis placerat sit sed duis id amet volutpat quam a, pharetra.</p>
+				<p class="contact_caption">PHONE</p>
+				<ul class="contact_list phone_list">
+					<li class="phone_li contact_text">+62-812-7313-4321</li>
+					<li class="phone_li contact_text">+62-817-000-1234</li>
+				</ul>
+				<p class="contact_caption">ONLINE SERVICE</p>
+				<ul class="contact_list online_list">
+					<li class="web_li contact_text">www.afrianska.com</li>
+					<li class="main_li contact_text">hello.afrian@gmail.com</li>
+				</ul>
+			</div>
+
+			<div class="message_block">
+				<p class="contact_caption message_caption">SEND US MESSAGE</p>
+				<label class="contact_text" for="full_name">Full Name</label>
+				<input class="input_field" type="text" name="full_name" placeholder="Your Name">
+
+				<label class="contact_text" for="email">Email</label>
+				<input class="input_field" type="text" name="email" placeholder="Your Email">
+
+				<label class="contact_text" for="message">Message</label>
+				<textarea class="input_field message_field" type="text" name="message" placeholder="Your Message"></textarea>
+
+				<button class="button submit">SUBMIT</button>
+			</div>
+		</div>
+
+		<img class="content__map" src="../images/map.png">
+	</content>
+
+	<footer class="footer">
+		<div class="work">
+			<div class="work__header">
+				<div class="work__caption">
+					<p class="caption work_caption">Intersted to work with our team?</p>	
+					<p class="thin_text work_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<button class="work_button" onclick="window.location.href='../html/contact.html'">Let’s Talk</button>
+			</div>
+
+			<hr class="work__line">
+
+			<div class="footer_links">
+				<div class="contact">
+					<div class="footer_caption">
+						<img class="footer_logo" src="../images/footer_logo.svg">
+						<p class="footer_name">Afrianska</p>
+					</div>
+					<ul class="contact_list">
+						<li class="a_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li class="t_li">+62-812-7313-4321</li>
+						<li class="e_li">hello.afrian@gmail.com</li>
+					</ul>
+				</div>
+
+				<div class="about">
+					<p class="footer_caption_text about_caption">About US</p>
+					<ul class="list_without_marker about_list">
+						<a><li class="about_li">About</li></a>
+						<a><li class="about_li">What We Do</li></a>
+						<a><li class="about_li">Project</li></a>
+						<a><li class="about_li">How It Work With Us</li></a>
+					</ul>
+				</div>
+
+				<div class="follow">
+					<p class="footer_caption_text follow_caption">Follow US</p>
+					<ul class="list_without_marker follow_list">
+						<a><li class="follow_li">Instagram</li></a>
+						<a><li class="follow_li">Facebook</li></a>
+						<a><li class="follow_li">LinkedIn</li></a>
+						<a><li class="follow_li">Youtube</li></a>
+					</ul>
+				</div>
+			</div>
+
+			<p class="rights_text">2019 © Afrianska. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

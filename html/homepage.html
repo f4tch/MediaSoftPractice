@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../style/style.css">
+
+	<script src="../js/menu.js"></script>
+
+	<title>Home</title>
+</head>
+<body>
+ 	<nav class="navigation">
+		<a href="homepage.html"><img class="logo" src="../images/logo.svg"></a>
+		<button class="menubutton" onclick="showMenu()"></button>
+	</nav>
+
+	<div id="menu" class="menu">
+		<button class="close_button" onclick="hideMenu()"></button>
+		<div class="menu_section menu_about">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_about_caption">About US</p>
+				<button class="menu_arrow_button about_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_about_list">
+				<a><li class="menu_about_li">About</li></a>
+				<a><li class="menu_about_li">What We Do</li></a>
+				<a><li class="menu_about_li">Project</li></a>
+				<a><li class="menu_about_li">How It Work With Us</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_follow">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_follow_caption">Follow US</p>
+				<button class="menu_arrow_button follow_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_follow_list">
+				<a><li class="menu_follow_li">Instagram</li></a>
+				<a><li class="menu_follow_li">Facebook</li></a>
+				<a><li class="menu_follow_li">LinkedIn</li></a>
+				<a><li class="menu_follow_li">Youtube</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_sample">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_sample1_caption">Sample 1</p>
+				<button class="menu_arrow_button sample1_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_sample1_list">
+				<a><li class="menu_sample1_li">Smthng1</li></a>
+				<a><li class="menu_sample1_li">Smthng2</li></a>
+				<a><li class="menu_sample1_li">Smthng3</li></a>
+				<a><li class="menu_sample1_li">Smthng4</li></a>
+				<a><li class="menu_sample1_li">Smthng5</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_sample">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_sample2_caption">Sample 2</p>
+				<button class="menu_arrow_button sample2_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_sample2_list">
+				<a><li class="menu_sample2_li">Smthng1</li></a>
+				<a><li class="menu_sample2_li">Smthng2</li></a>
+				<a><li class="menu_sample2_li">Smthng3</li></a>
+				<a><li class="menu_sample2_li">Smthng4</li></a>
+				<a><li class="menu_sample2_li">Smthng5</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<header class="header">
+		<img class="header__bg" src="../images/homepage_background.svg">
+		<div class="header__info_block">
+			<h1 class="header__caption">New Automation<br>Tool for Your Home</h1>
+			<p class="thin_text header_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</p>
+			<button class="button header_button" onclick="window.location.href='../html/blogpage.html'">See Our Project</button>
+		</div>	
+	</header>
+ 
+	<content class="content">
+		<p class="caption content_caption">What we do to help our client grow in digital era,</p>	
+		<div class="content__infoblocks">
+			<div class="column1">
+				<div class="content__infoblock block2">
+					<div class="infoblock_picture">
+						<img class="infoblock_picture_bg" src="../images/infoblock_bg_circle.svg">
+						<img class="picture picture2" src="../images/block2.svg">
+					</div>
+					<h2 class="infoblock_caption">Make Your business To Be Better Famous In Internet</h2>
+					<p class="infoblock_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="infoblock_link">
+						<a><p class="learnmore_text">Learn more</p></a>
+						<button class="arrow_button"></button>
+					</div>
+				</div>
+			</div>	
+			<div class="column2">
+				<div class="content__infoblock block1">
+					<div class="infoblock_picture">
+						<img class="infoblock_picture_bg" src="../images/infoblock_bg_circle.svg">
+						<img class="picture picture1" src="../images/block1.svg">
+					</div>
+					<h2 class="infoblock_caption">Bring Technology To Your Comfrotable Home</h2>
+					<p class="infoblock_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="infoblock_link">
+						<a><p class="learnmore_text">Learn more</p></a>
+						<button class="arrow_button"></button>
+					</div>
+				</div>	
+				<div class="content__infoblock block3">
+					<div class="infoblock_picture">
+						<img class="infoblock_picture_bg" src="../images/infoblock_bg_circle.svg">
+						<img class="picture picture3" src="../images/block3.svg">
+					</div>
+					<h2 class="infoblock_caption">Build Your Digital Product That Suitable For Your Need</h2>
+					<p class="infoblock_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="infoblock_link">
+						<a><p class="learnmore_text">Learn more</p></a>
+						<button class="arrow_button"></button>
+					</div>
+				</div>	
+			</div>	
+		</div>
+		<div class="project_section">
+			<div class="project_section__caption">
+				<p class="caption project_caption">Our Finished Project</p>	
+				<p class="thin_text project_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			</div>
+			<div class="projects">
+				<div class="projects__project_block proj_block1">
+					<img class="proj_block_bg" src="../images/alberto-castillo-q-mx4mSkK9zeo-unsplash.png">
+					<img class="proj_block_bg_element" src="../images/projblock1.svg">
+					<div class="proj_block_info">
+						<h3 class="proj_block_caption">Smart Home Installation</h3>
+						<p class="thin_text proj_block_text">In Muarakana Housing Estate</p>
+					</div>
+				</div>
+ 				<div class="proj_row2">
+					<div class="projects__project_block proj_block2">
+						<img class="proj_block_bg" src="../images/Dribble iphonex mockup.png">
+						<div class="proj_block_info">
+							<h3 class="proj_block_caption">Sparklite App</h3>
+							<p class="thin_text proj_block_text">Marketplace</p>
+						</div>
+					</div>
+					<div class="projects__project_block proj_block3">
+						<img class="proj_block_bg" src="../images/Car-Rapetition App.png">
+						<div class="proj_block_info">
+							<h3 class="proj_block_caption">Car-Rapetition App</h3>
+							<p class="thin_text proj_block_text">Board</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</content>
+
+	<footer class="footer">
+		<div class="clients">
+			<div class="clients__caption">
+				<p class="caption clients_caption">Our Beloved Client</p>	
+				<p class="thin_text clients_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			</div>
+
+			<table class="clients__logos">
+				<tr class="logo_row">
+					<td class="logo_cell"><img class="logo_img" src="../images/client_logos/aquainox.svg"></td>
+					<td class="logo_cell"><img class="logo_img" src="../images/client_logos/atento-4.svg"></td>
+					<td class="logo_cell"><img class="logo_img" src="../images/client_logos/emerica.svg"></td>
+					<td class="logo_cell"><img class="logo_img" src="../images/client_logos/fep.svg"></td>
+				</tr>
+				<tr class="logo_row">
+					<td class="logo_cell"><img class="logo_img" src="../images/client_logos/rai-vereniging.svg"></td>
+					<td class="logo_cell"><img class="logo_img" src="../images/client_logos/university-of-phoenix.svg"></td>
+					<td class="logo_cell"><img class="logo_img" src="../images/client_logos/xbox-360.svg"></td>
+					<td class="more_cell">More Client</td>
+				</tr>
+			</table>
+
+			<div class="work">
+				<div class="work__header">
+					<div class="work__caption">
+						<p class="caption work_caption">Intersted to work with our team?</p>	
+						<p class="thin_text work_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					</div>
+					<button class="button work_button" onclick="window.location.href='../html/contact.html'">Let’s Talk</button>
+				</div>
+
+				<hr class="work__line">
+
+				<div class="footer_links">
+					<div class="contact">
+						<div class="footer_caption">
+							<img class="footer_logo" src="../images/footer_logo.svg">
+							<p class="footer_name">Afrianska</p>
+						</div>
+						<ul class="contact_list">
+							<li class="a_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+							<li class="t_li">+62-812-7313-4321</li>
+							<li class="e_li">hello.afrian@gmail.com</li>
+						</ul>
+					</div>
+
+					<div class="about">
+						<p class="footer_caption_text about_caption">About US</p>
+						<ul class="list_without_marker about_list">
+							<a><li class="about_li">About</li></a>
+							<a><li class="about_li">What We Do</li></a>
+							<a><li class="about_li">Project</li></a>
+							<a><li class="about_li">How It Work With Us</li></a>
+						</ul>
+					</div>
+
+					<div class="follow">
+						<p class="footer_caption_text follow_caption">Follow US</p>
+						<ul class="list_without_marker follow_list">
+							<a><li class="follow_li">Instagram</li></a>
+							<a><li class="follow_li">Facebook</li></a>
+							<a><li class="follow_li">LinkedIn</li></a>
+							<a><li class="follow_li">Youtube</li></a>
+						</ul>
+					</div>
+				</div>
+
+				<p class="rights_text">2019 © Afrianska. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

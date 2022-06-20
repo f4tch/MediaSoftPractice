@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../style/blog.css">
+
+	<script src="../js/menu.js"></script>
+
+	<title>Blog</title>
+</head>
+<body>
+	<nav class="navigation">
+		<a href="homepage.html"><img class="logo" src="../images/logo.svg"></a>
+		<button class="menubutton" onclick="showMenu()"></button>
+	</nav>
+
+	<div id="menu" class="menu">
+		<button class="close_button" onclick="hideMenu()"></button>
+		<div class="menu_section menu_about">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_about_caption">About US</p>
+				<button class="menu_arrow_button about_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_about_list">
+				<a><li class="menu_about_li">About</li></a>
+				<a><li class="menu_about_li">What We Do</li></a>
+				<a><li class="menu_about_li">Project</li></a>
+				<a><li class="menu_about_li">How It Work With Us</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_follow">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_follow_caption">Follow US</p>
+				<button class="menu_arrow_button follow_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_follow_list">
+				<a><li class="menu_follow_li">Instagram</li></a>
+				<a><li class="menu_follow_li">Facebook</li></a>
+				<a><li class="menu_follow_li">LinkedIn</li></a>
+				<a><li class="menu_follow_li">Youtube</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_sample">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_sample1_caption">Sample 1</p>
+				<button class="menu_arrow_button sample1_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_sample1_list">
+				<a><li class="menu_sample1_li">Smthng1</li></a>
+				<a><li class="menu_sample1_li">Smthng2</li></a>
+				<a><li class="menu_sample1_li">Smthng3</li></a>
+				<a><li class="menu_sample1_li">Smthng4</li></a>
+				<a><li class="menu_sample1_li">Smthng5</li></a>
+			</ul>
+		</div>
+
+		<div class="menu_section menu_sample">
+			<div class="menu_caption">
+				<p class="footer_caption_text menu_sample2_caption">Sample 2</p>
+				<button class="menu_arrow_button sample2_arrow" onclick="toggleSection(this)"></button>
+			</div>
+			<ul class="list_without_marker menu_list menu_sample2_list">
+				<a><li class="menu_sample2_li">Smthng1</li></a>
+				<a><li class="menu_sample2_li">Smthng2</li></a>
+				<a><li class="menu_sample2_li">Smthng3</li></a>
+				<a><li class="menu_sample2_li">Smthng4</li></a>
+				<a><li class="menu_sample2_li">Smthng5</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<header class="header">
+		<h1 class="header__caption">Blog Afrianska</h1>
+		<p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</header>
+
+ 	<content class="content">
+		<input class="content__searchbar" type="text" placeholder="Search Article">
+		<p class="content__section_caption">POPULAR</p>
+		<div class="content__popular_section">
+			<div class="popular_bigblock">
+				<div class="popular_bigblock__info">
+					<a><h2 class="popular_block_caption bigblock_caption">Feugiat sodales at nullam tellus.</h2></a>
+					<p class="popular_block_text bigblock_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi posuere nibh tempor fringilla porta pellentesque ipsum.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+				<a><img class="article_image bigblock_picture" src="../images/popular_block/bigblock.png"></a>
+			</div>
+			<div class="popular_otherblocks">
+				<div class="popular_block">
+					<a><img class="article_image block_picture" src="../images/popular_block/Rectangle 5.png"></a>
+					<a><h2 class="popular_block_caption block_caption">Porta proin tellus sed pulvinar odio eu pulvinar.</h2></a>
+					<p class="popular_block_text block_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="popular_block">
+					<a><img class="article_image block_picture" src="../images/popular_block/Rectangle 5-1.png"></a>
+					<a><h2 class="popular_block_caption block_caption">Non quam tortor, proin eu egestas scelerisque purus.</h2></a>
+					<p class="popular_block_text block_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="popular_block">
+					<a><img class="article_image block_picture" src="../images/popular_block/Rectangle 5-2.png"></a>
+					<a><h2 class="popular_block_caption block_caption">Amet amet sed pharetra risus sit eget interdum.</h2></a>
+					<p class="popular_block_text block_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a><p class="content__bottom_text popular_bottom_text">See All Popular Article</p></a>
+
+		<hr class="content__line">
+
+ 		<p class="content__section_caption">ALL ARTICLE</p>
+		<div class="content__article_section">
+			<div class="article">
+				<a><img class="article_image" src="../images/article_block/1.png"></a>
+				<div class="article_info">
+					<a><h3 class="article_caption">Massa eu in laoreet enim augue vulputate nunc.</h3></a>
+					<p class="article_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="article">
+				<a><img class="article_image" src="../images/article_block/2.png"></a>
+				<div class="article_info">
+					<a><h3 class="article_caption">Feugiat a euismod arcu feugiat posuere morbi.</h3></a>
+					<p class="article_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="article">
+				<a><img class="article_image" src="../images/article_block/3.png"></a>
+				<div class="article_info">
+					<a><h3 class="article_caption">Sociis purus pellentesque faucibus vitae et felis.</h3></a>
+					<p class="article_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="article">
+				<a><img class="article_image" src="../images/article_block/4.png"></a>
+				<div class="article_info">
+					<a><h3 class="article_caption">Cursus feugiat mi pellentesque mauris sed eu.</h3></a>
+					<p class="article_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="article">
+				<a><img class="article_image" src="../images/article_block/5.png"></a>
+				<div class="article_info">
+					<a><h3 class="article_caption">A morbi arcu curabitur etiam fringilla augue.</h3></a>
+					<p class="article_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</p>
+					<div class="block_author">
+						<div class="block_author__text">
+							<a><p class="author_name">Samatha Leuthex</p></a>
+							<p class="author_date">May 5, 3 min read</p>
+						</div>
+						<div class="block_author__buttons">
+							<button class="button addtofav_button"></button>
+							<button class="button share_button"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="article_scroll">
+			<div class="scroll_button scroll_left">
+				<button class="arrow_button left_button"></button>
+				<a><p class="content__bottom_text scroll_text">New Post</p></a>
+			</div>
+			<div class="scroll_button scroll_right">
+				<a><p class="content__bottom_text scroll_text">Old Post</p></a>
+				<button class="arrow_button right_button"></button>
+			</div>
+		</div>
+	</content>
+
+	<footer class="footer">
+		<div class="work">
+			<div class="work__header">
+				<div class="work__caption">
+					<p class="caption work_caption">Intersted to work with our team?</p>	
+					<p class="thin_text work_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+				<button class="work_button" onclick="window.location.href='../html/contact.html'">Let’s Talk</button>
+			</div>
+
+			<hr class="work__line">
+
+			<div class="footer_links">
+				<div class="contact">
+					<div class="footer_caption">
+						<img class="footer_logo" src="../images/footer_logo.svg">
+						<p class="footer_name">Afrianska</p>
+					</div>
+					<ul class="contact_list">
+						<li class="a_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+						<li class="t_li">+62-812-7313-4321</li>
+						<li class="e_li">hello.afrian@gmail.com</li>
+					</ul>
+				</div>
+
+				<div class="about">
+					<p class="footer_caption_text about_caption">About US</p>
+					<ul class="list_without_marker about_list">
+						<a><li class="about_li">About</li></a>
+						<a><li class="about_li">What We Do</li></a>
+						<a><li class="about_li">Project</li></a>
+						<a><li class="about_li">How It Work With Us</li></a>
+					</ul>
+				</div>
+
+				<div class="follow">
+					<p class="footer_caption_text follow_caption">Follow US</p>
+					<ul class="list_without_marker follow_list">
+						<a><li class="follow_li">Instagram</li></a>
+						<a><li class="follow_li">Facebook</li></a>
+						<a><li class="follow_li">LinkedIn</li></a>
+						<a><li class="follow_li">Youtube</li></a>
+					</ul>
+				</div>
+			</div>
+
+			<p class="rights_text">2019 © Afrianska. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
